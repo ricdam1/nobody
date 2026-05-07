@@ -1,0 +1,23 @@
+artifact_path: file:c:/Users/USER/Documents/Python Project/motorguard/src/mlruns/1/models/m-8da42fd45a6f40f1ad2e7f3b007e4950/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-8da42fd45a6f40f1ad2e7f3b007e4950
+model_size_bytes: 1332942
+model_uuid: m-8da42fd45a6f40f1ad2e7f3b007e4950
+prompts: null
+run_id: 18ab555ce66a4a349facc6c4498dc7c7
+utc_time_created: '2026-05-06 22:53:42.636627'
