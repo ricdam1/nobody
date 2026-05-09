@@ -72,38 +72,38 @@ Business cost weights missed Critical failures at 10× the cost of
 false alarms — reflecting real-world maintenance priorities.
 
 ---
-
 ##  Project Structure
+```bash
 motorguard/
 │
-├── artifacts/                  # Saved model, scaler, encoders, SHAP
-│   ├── motorguard_model.pkl
-│   ├── scaler.pkl
-│   ├── label_encoder.pkl
-│   ├── feature_cols.pkl
-│   └── shap_explainer.pkl
+├── app/
+│   └── streamlit_app.py
 │
 ├── data/
-│   ├── raw_data.csv            # Original downloaded dataset
-│   └── processed_data.csv     # After feature engineering
+│   ├── raw_data.csv
+│   └── processed_data.csv
 │
 ├── notebooks/
-│   └── plots/                 # All generated charts
-│
-├── app/
-│   └── streamlit_app.py       # Streamlit dashboard
+│   ├── plot1_class_distribution.png
+│   ├── plot2_correlation_heatmap.png
+│   ├── plot3_feature_distributions.png
+│   ├── plot4_smote_effect.png
+│   ├── plot5_confusion_matrices.png
+│   ├── plot6_business_cost.png
+│   └── plot7_shap_importance.png
 │
 ├── src/
-│   ├── preprocess.ipynb
-│   ├── train.ipynb
+│   ├── eda/
+│   │   └── preprocess.ipynb
+│   │
+│   ├── mlruns/
+│   │
+│   └── train.ipynb
 │
-├── requirements.txt
+├── .gitignore
+├── check_setup.py
 └── README.md
-
-
-
----
-
+```
 ##  Getting Started
 
 ### 1. Clone the repository
