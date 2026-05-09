@@ -109,7 +109,7 @@ motorguard/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/motorguard.git
+git clone https://github.com/ricdam1/motorguard.git
 cd motorguard
 ```
 
